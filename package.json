@@ -9,5 +9,22 @@
     "eslint": "^5.1.0",
     "eslint-config-minlint": "^2.0.0",
     "tape": "^4.9.1"
-  }
+  },
+  "name": "beefdad-server",
+  "description": "Server-side stuff",
+  "version": "0.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nichoth/beefdad-server.git"
+  },
+  "author": "Nick Thomas <nichoth@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/nichoth/beefdad-server/issues"
+  },
+  "homepage": "https://github.com/nichoth/beefdad-server#readme"
 }
