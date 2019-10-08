@@ -6,6 +6,11 @@
   "directories": {
     "test": "test"
   },
+  "husky": {
+      "hooks": {
+          "pre-push": "npm test"
+      }
+  },
   "scripts": {
     "preversion": "npm run lint && npm test",
     "postversion": "git push && git push --tags",
@@ -18,6 +23,7 @@
   "devDependencies": {
     "eslint": "^5.1.0",
     "eslint-config-minlint": "^2.0.0",
+    "husky": "^3.0.8",
     "tape": "^4.9.1"
   },
   "repository": {
