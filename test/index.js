@@ -5,4 +5,5 @@ test('example', function (t) {
     t.plan(1)
     var server = Server()
     t.ok(server, 'server returns')
+    server.close()
 })
