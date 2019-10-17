@@ -7,18 +7,20 @@
     "test": "test"
   },
   "husky": {
-      "hooks": {
-          "pre-push": "npm test"
-      }
+    "hooks": {
+      "pre-push": "npm test"
+    }
   },
   "scripts": {
+    "start": "env $(cat .env | xargs) node index.js",
     "preversion": "npm run lint && npm test",
     "postversion": "git push && git push --tags",
     "lint": "eslint .",
     "test": "tape test/*.js"
   },
   "dependencies": {
-    "level": "^5.0.1"
+    "level": "^5.0.1",
+    "ruta3": "^2.0.1"
   },
   "devDependencies": {
     "eslint": "^5.1.0",
@@ -34,6 +36,5 @@
   "bugs": {
     "url": "https://github.com/nichoth/beefdad-server/issues"
   },
-  "homepage": "https://github.com/nichoth/beefdad-server#readme",
-  "private": true
+  "homepage": "https://github.com/nichoth/beefdad-server#readme"
 }
