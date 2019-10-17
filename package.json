@@ -16,7 +16,7 @@
     "preversion": "npm run lint && npm test",
     "postversion": "git push && git push --tags",
     "lint": "eslint .",
-    "test": "tape test/*.js"
+    "test": "tape test/*.js | tap-spec"
   },
   "dependencies": {
     "level": "^5.0.1",
@@ -26,6 +26,7 @@
     "eslint": "^5.1.0",
     "eslint-config-minlint": "^2.0.0",
     "husky": "^3.0.8",
+    "tap-spec": "^5.0.0",
     "tape": "^4.9.1"
   },
   "repository": {
